@@ -1,0 +1,535 @@
+* {
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifs;
+   
+
+}
+body{
+    background-color:hsl(228, 33%, 97%);
+}
+.container{
+    width: 100%;
+    height: auto;
+    /* overflow-y: auto; */
+}
+.typeComment{
+    position: relative;
+    width: 60%;
+    height:150px;
+    bottom: -30px;
+    top: auto;
+    margin-top: 10px;
+    left: 350px;
+    display: block;
+    background-color: #ffff;
+    border-radius: 10px;
+  
+}
+.typeComment textarea {
+    position: relative;
+    top: 30px;
+    line-height: 1;
+    width: 70%;
+    text-wrap: wrap;
+    height: 70px;
+    text-align: start;
+    padding: 10px 10px;
+    border: 1px solid  hsl(211, 17%, 53%);
+    border-radius: 12px;
+    left: 100px;
+    resize: none;
+    outline: none;
+}
+
+.typeComment button{
+    position: absolute;
+    left: 690px;
+    top: 30px;
+    width: 90px;
+    outline: none;
+    background-color:hsl(238, 40%, 52%) ;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.typeComment img{
+    position: absolute;
+    left: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+}
+
+.commentContainer {
+  width: 70%;
+  position: relative;
+  background-color: #fff;
+  margin: 10px; 
+  padding: 10px;
+  height: 170px;
+  margin-left: 230px;
+  border-radius: 10px;
+  }
+  
+  .userImage {
+   position: absolute;
+   top: 40px;
+   left: 100px;
+   width: 50px;
+   height: 50px;
+  }
+  
+  .userName {
+    font-weight: bold;
+  position: absolute;
+  left: 160px;
+  top: 50px;
+  }
+  
+  .createdAt {
+    color: #777;
+    font-size: small;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+  }
+  
+  .commentText {
+   position: absolute;
+   top: 80px;
+   left: 100px;
+   
+  }
+  .markContainer{
+    background-color:hsl(235, 69%, 94%) ;
+    width: 50px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: 120px;
+    display: block;
+    border-radius: 12px;  
+}
+  .plusSign{
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    fill: #C5C6EF;
+    transition: fill 0.3s;
+    
+  }
+  svg.plusSign:hover {
+    fill: hsl(238, 40%, 52%) ;
+  }
+  .mark{
+       display: block;
+       padding-left: 17px;
+       padding-top: 15px;
+  }
+  .minusSign{
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    fill: #C5C6EF;
+  }
+  .minusSign:hover{
+    fill: hsl(238, 40%, 52%) ;
+  }
+  .reply{
+   position: absolute;
+   top:  40px;
+   left: 800px;
+   cursor: pointer;
+   /* margin-left: 200pxs;
+   margin-top: -100px; */
+
+   }
+  .replyIcon {
+    position: absolute; 
+    left: 780px;
+    top: 45px;
+   
+  }
+  .replyContainer{
+    width: 65%;
+    position: relative;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    height: 170px;
+    display: block;
+    margin-left: 300px;
+    border-radius: 10px;
+  }  
+ 
+  .replyMarkContainer{
+    background-color:hsl(235, 69%, 94%) ;
+    width: 50px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: 120px;
+    display: block;
+    border-radius: 12px;  
+}
+
+
+ .plusSignRep{
+  display: block;
+  padding-left: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+
+  
+}
+
+ .plusSignRep:hover{
+  fill: hsl(238, 40%, 52%) ;
+}
+
+ .mark{
+     display: block;
+     padding-left: 17px;
+     padding-top: 15px;
+}
+
+ .minusSignRep{
+  display: block;
+  padding-left: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.replyContainer .reply{
+  position: absolute;
+  top:  40px;
+  left: 730px;
+  cursor: pointer;
+} 
+ .replyIconRep{
+
+  width: 20px;
+  height: 10px;
+  position: absolute; 
+  left: 710px;
+  top: 45px;
+
+
+} 
+.commentText .replyingTo{
+  color: hsl(238, 40%, 52%);
+  font-weight: bolder;
+}
+
+.youLable{
+  position: absolute;
+  top: 50px;
+  left: 260px;
+  background-color: hsl(238, 40%, 52%);
+}
+
+.deleteOption{
+  position: absolute;
+  top: 55px;
+  left: 550px;
+  cursor: pointer;
+}
+.deleteOption .deleteSign{
+     position: absolute;
+     top: 3px;
+     left: -30px;
+    
+}
+.EditOption{
+  position: absolute;
+  top: 55px;
+  left: 680px;
+  cursor: pointer;
+}
+.EditOption .editSign{
+  position: absolute;
+  top: 3px;
+  left: -30px;
+ 
+}
+.newReplyContainer{
+  width: 60%;
+  position: relative;
+  background-color: #fff;
+  height: 170px;
+  top: 10px;
+  padding:  10px 40px;
+  display: block;
+  margin-left: 60px;
+  border-radius: 10px;
+  left: 240px;
+  z-index: 10;
+
+  margin-bottom: 30px;
+}
+/* .replyContainer .newReplyContainer{
+  width: 90%;
+  position: relative;
+  background-color: #fff;
+  height: 170px;
+  top: 200px;
+  padding:  10px 40px;
+  left: -50px;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  z-index: 10;
+} */
+.newReplyContainer img{
+    position: relative;
+    top: -40px;
+    width: 50px;
+    height: 50px;
+
+}
+.newReplyContainer textarea{
+    position: relative;
+    top: 20px;
+    line-height: 1;
+    width: 75%;
+    text-wrap: wrap;
+    height: 100px;
+    text-align: start;
+    padding: 10px 10px;
+    border: 1px solid  hsl(211, 17%, 53%);
+    border-radius: 12px;
+    left: 20px;
+    resize: none;
+    outline: none;
+
+}
+.newReplyContainer button{
+  position: relative;
+  left: 30px;
+  top: -70px;
+  width: 90px;
+  outline: none;
+  background-color:hsl(238, 40%, 52%) ;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: #ffff;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.updateUserImage{
+  position: absolute;
+  left: 30px;
+
+  top: 30px;
+}
+.newReplyContainer .markContainer
+{
+  position: absolute;
+  left: 30px;
+  top: 40px;
+}
+.newReplyContainer .userName{
+   position: absolute;
+   top: 30px;
+   left: 160px;
+}
+.newReplyContainer .updateUserImage{
+  position: absolute;
+  left: 90px;
+  top: 30px;
+}
+.newReplyContainer .commentText{
+  position: absolute;
+  top: 80px;
+}
+
+.textarea{
+      position: absolute;
+      top: 90px;
+      left: 100px;
+      width: 70%;
+      height: 50px;
+      line-height:1;
+      text-wrap: wrap;
+      height: 70px;
+      text-align: start;
+      padding: 10px 10px;
+      border: 1px solid  hsl(211, 17%, 53%);
+      border-radius: 12px;
+      resize: none;
+      outline: none;
+    }
+    .updateBtn{
+      position: absolute;
+      top: 100px;
+      left: 750px;
+      width: 90px;
+      outline: none;
+      background-color:hsl(238, 40%, 52%) ;
+      height: 40px;
+      outline: none;
+      border: none;
+      color: #ffff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+   .newReplyContainer .textarea2{
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    width: 70%;
+    height: 50px;
+    line-height:1;
+    text-wrap: wrap;
+    height: 70px;
+    text-align: start;
+    padding: 10px 10px;
+    border: 1px solid  hsl(211, 17%, 53%);
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+   } 
+.newReplyContainer .updateBtn{
+  position: absolute;
+  top: 100px;
+  left: 750px;
+  width: 90px;
+  outline: none;
+  background-color:hsl(238, 40%, 52%) ;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: #ffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.commentContainer .youLable{
+  position: absolute;
+   top: 65px;
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal{
+  position: fixed;
+  width: 30%;
+  height: 200px;
+  display: flex;
+  z-index: 999;
+  top: 40%;
+  left: 40%;
+  background-color: #fff;
+}
+.modal .modalText{
+  position: absolute;
+  top: 40px;
+  left:20px
+
+
+}
+.modal .cancel{
+  position: absolute;
+  top: 140px;
+  left: 30px;
+  width: 150px;
+  color: #fff;
+  background-color: #4a4a4a;
+  height: 40px;
+  border:none;
+  border-radius: 10px;
+}
+.modal .confirm{
+  position: absolute;
+  top: 140px;
+  left: 200px;
+  width: 150px;
+  color: #fff;
+  height: 40px;
+  border:none;
+  border-radius: 10px;
+  background-color: rgb(241, 58, 58);
+}
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  height: 100vmax;
+  background-color: rgba(200, 200, 200, 0.5); /* Light gray with transparency */
+}
+.modal h3{
+  left: 20px;
+  position: absolute;
+}
+.textarea2{
+  position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 70%;
+    height: 50px;
+    line-height:1;
+    text-wrap: wrap;
+    height: 70px;
+    text-align: start;
+    padding: 10px 10px;
+    border: 1px solid  hsl(211, 17%, 53%);
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+}
+.commentContainer .updateBtn{
+  top: 110px;
+  left: 800px;
+}
+/*Responsive Design...*/
+@media screen and (max-width:375px){
+ 
+  .commentContainer{
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    height: 500px;
+  }
+}
